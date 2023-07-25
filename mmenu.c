@@ -61,8 +61,8 @@ static SDL_Surface* ui_mute_icon;
 static TTF_Font* font;
 static TTF_Font* tiny;
 
-static SDL_Color gold = {0xd2,0xb4,0x6c};
-static SDL_Color bronze = {0x9f,0x89,0x52};
+static SDL_Color gold = {0x27,0x27,0x27};
+static SDL_Color bronze = {0x00,0x00,0x00};
 static SDL_Color white = {0xff,0xff,0xff};
 
 #include <execinfo.h>
