@@ -1,4 +1,4 @@
-CROSS_COMPILE := /opt/trimui-toolchain/bin/arm-buildroot-linux-gnueabi-
+CROSS_COMPILE := /opt/trimui-toolchain/usr/bin/arm-buildroot-linux-gnueabi-
 PREFIX=/opt/trimui-toolchain/arm-buildroot-linux-gnueabi/sysroot/usr
 
 TARGET=mmenu
