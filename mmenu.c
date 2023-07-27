@@ -259,8 +259,8 @@ __attribute__((constructor)) static void init(void) {
 	ui_arrow_right_w	= IMG_Load(kResDir "right-arrow-small.png");
 	ui_selected_dot		= IMG_Load(kResDir "selected-slot-dot.png");
 	
-	ui_empty_slot 		= TTF_RenderUTF8_Blended(tiny, "Empty Slot", gold);
-	ui_no_preview 		= TTF_RenderUTF8_Blended(tiny, "No Preview", gold);
+	ui_empty_slot 		= TTF_RenderUTF8_Blended(tiny, "Empty Slot", white);
+	ui_no_preview 		= TTF_RenderUTF8_Blended(tiny, "No Preview", white);
 	
 	ui_power_0_icon		= IMG_Load(kResDir "power-0%-icon.png");
 	ui_power_20_icon	= IMG_Load(kResDir "power-20%-icon.png");
@@ -781,7 +781,7 @@ MenuReturnStatus ShowMenu(char* rom_path, char* save_path_template, SDL_Surface*
 				SDL_BlitSurface(ui_bottom_bar, NULL, screen, &(SDL_Rect){0,210,0,0});
 			
 				// game name
-				text = TTF_RenderUTF8_Blended(tiny, rom_name, gold);
+				text = TTF_RenderUTF8_Blended(tiny, rom_name, white);
 				int tw = text->w;
 				int tx = (320-tw)/2;
 				if (tx<6) {
